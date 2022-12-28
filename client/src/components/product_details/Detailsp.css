@@ -1,0 +1,9 @@
+.drawer::-webkit-scrollbar {
+    width: 10px;
+    /* background-color:'green'; */
+   
+  }
+  .drawer::-webkit-scrollbar-thumb {
+    background: #008000;
+    border-radius: 10px;
+  }

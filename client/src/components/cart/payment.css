@@ -1,0 +1,261 @@
+.paymentContainer-pk{
+    display: flex;
+    /* margin-top: 1.56rem; */
+    padding: 1rem 3rem;
+    font-family: proxima-nova, sans-serif;
+}
+.payment-left-div-pk{
+    width: 70%;
+    height: 70vh;
+    /* border: 1px solid teal; */
+    margin-right: 2.5rem;
+}
+
+.box-shadow-pk{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.payment-left-top-heading-pk{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.payment-method-container-pk{
+    /* border: 1px solid red; */
+    margin-top: 1.69rem;
+    height: 500px;
+}
+.payment-method-div-pk{
+    height: 500px;
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+.payment-method-left-pk{
+    height: 100%;
+    flex: 1 1 0%;
+    font-size: 1.12rem;
+    max-width: 11.31rem;
+    background-color: rgb(0, 102, 167);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.payment-icon-dtl-pk{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(133, 187, 222);
+    font-size: 0.81rem;
+    padding: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
+    cursor: pointer;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.payment-icon-pk{
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.02rem;
+}
+.cash-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/cash_active.png);
+}
+.payment-method-text-pk{
+    text-transform: uppercase;
+}
+.credit-card-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/cc.png);
+}
+.debit-card-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/dc.png);
+}
+.net-banking-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/nb.png);
+}
+.upi-wallet-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/cashcrd.png);
+}
+.giftCards-evouchers-mode-icon-url-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/evoucher.png);
+}
+.payment-method-text-p-tag-pk{
+    margin: 0px;
+}
+
+.payment-method-right-pk{
+    flex: 3 1 0%;
+    margin-right: 2.5rem;
+    padding: 1rem;
+    position: relative;
+    min-height: 32rem;
+}
+.cash-payment-option-show-pk{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1.56rem 3rem 0px;
+    line-height: 2rem;
+}
+.cash-payment-option-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/cod_image.png);
+    width: 15.3rem;
+    height: 15.3rem;
+    background-size: 100% 100%;
+}
+.payment-mode-desc-pk{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgb(67, 103, 127);
+    text-transform: uppercase;
+    margin-top: 1.05rem;
+}
+.payment-mode-desc-pk p{
+    text-align: center;
+    margin: 0px;
+}
+.confirm-order-btn-div-pk{
+    align-self: center;
+    margin-top: 1rem;
+}
+.cash-confirm-btn-pk{
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid rgb(0, 171, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 181, 60);
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.payment-right-div-pk{
+    width: 25%;
+    height: 70vh;
+    /* border: 1px solid teal; */
+    flex: 1 1 0%;
+    font-size: 1.12rem;
+}
+.payment-address-title-pk{
+    margin-left: 0.2rem;
+    padding: 0.5rem 0px;
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(27, 28, 29);
+}
+.payment-addr-cont-pk{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0px 0.4em 3rem;
+    max-width: 100%;
+    flex-basis: auto;
+    border-radius: 3px;
+    height: auto;
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.addr-location-icon-div-pk{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.addr-location-icon-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/location_pin.png);
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 2rem;
+    background-size: 100% 100%;
+}
+.addr-text-div-pk{
+    width: 100%;
+    margin-left: 0.6rem;
+}
+.addr-location-main-pk{
+    font-weight: 600;
+    color: rgb(27, 28, 29);
+    font-size: 1rem;
+}
+.addr-location-sub-pk{
+    font-weight: 500;
+    color: rgb(116, 118, 119);
+}
+.payment-phone-div-pk{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.phone-icon-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/myprofile_phone-call.svg);
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 1.5em;
+    height: 1.5em;
+}
+.payment-phone-div-pk>span{
+    width: 100%;
+    margin-left: 0.6rem;
+}
+.price-detail-cont-pk{
+    margin: 1rem 0px 0px 0.5rem;
+    width: 100%;
+}
+.price-details-cont-pk{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem 1rem 1rem;
+}
+.price-text-div-pk{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0.3rem 0px;
+    font-weight: 600;
+    position: relative;
+}
+.tax-charges-cont-pk{
+    display: flex;
+    -webkit-box-pack: start;
+    /* justify-content: start; */
+    -webkit-box-align: center;
+    align-items: center;
+}
+.tax-details-div-pk{
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 0.8rem;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgba(53, 53, 53, 0.87);
+    cursor: pointer;
+}
+.break-line-pk{
+    width: 100%;
+    border-bottom: 1px dashed rgb(194, 208, 214);
+    margin-bottom: 0.5rem;
+}
+.payment-mode-note-pk{
+    font-size: 0.81rem;
+    font-weight: 500;
+    color: rgb(18, 18, 18);
+    margin: 1rem 0px;
+}
+.payment-mode-note-pk>span{
+    font-weight: 900;
+    font-size: 0.85rem;
+}

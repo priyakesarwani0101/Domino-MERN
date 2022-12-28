@@ -1,0 +1,53 @@
+.ord-succ-cont-pk{
+    /* background-color: rgb(247, 243, 239); */
+    /* height: 100vh; */
+    background-color: ghostwhite;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    /* padding-top: 2.5rem; */
+}
+.ord-succ-cont-pk>div{
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    /* border: 1px solid green; */
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.5rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.ord-succ-cont-pk>div>img{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: auto;
+    /* text-align: center; */
+}
+.ord-succ-cont-pk>div>h1{
+    color: rgb(85, 224, 178);
+    font-size: 50px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.thank-h2-tag-pk{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px auto;
+    /* color: red; */
+}
+.ord-succ-cont-pk>div>span{
+    display: block;
+    margin-bottom: 3rem;
+}
+.thank-home-btn-pk{
+    padding: 0.6rem 4rem;
+    font-size: x-large;
+    background-color: rgb(85, 224, 178);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}

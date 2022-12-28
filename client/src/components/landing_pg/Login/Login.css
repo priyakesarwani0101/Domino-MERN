@@ -1,0 +1,14 @@
+#verifyBtn {
+  margin-left: 50px;
+  border: 1px solid #708aa5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #708aa5;
+  font-weight: 600;
+}
+
+#verifyBtn:hover {
+  color: white;
+  background-color: #5ea2eb;
+  cursor: pointer;
+}

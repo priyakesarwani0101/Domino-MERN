@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menuPage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+.menu{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 20px;
+   background-image: url("https://www.dominos.co.in/theme2/front/images/menu-images/red.webp");
+   color: white;
+    align-items: center;
+}
+.menu > img{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    margin-top: 20px;
+}
+.menu > img:hover{
+ width: 90%;
+ margin: auto;
+ height: 330px;
+}
+.menu > h1{
+    font-size: large;
+    font-weight: bold;
+}
+#menuBtn{
+    padding: 10px 35px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 7px;
+    border: none;
+   margin: 10px 10px;
+   margin-left: 30%;
+   text-transform: uppercase;
+   border: 1px solid #fff;
+}
+#banner > img{
+    width: 100%;
+}
+#menuBtn:hover{
+    padding: 15px 40px;
+    margin-left: 28%;
+}

@@ -1,0 +1,183 @@
+.credit-card-main-pk{
+    /* width: fit-content; */
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    /* padding: 3rem 3rem 0px; */
+    padding: 2rem;
+    padding-right: 0px;
+    line-height: 2rem;
+    margin-left: 3%;
+    /* margin-right: 50px; */
+    /* border: 1px solid red; */
+}
+.credit-card-text-pk{
+    color: rgb(95, 136, 163);
+    font-size: 1.4rem;
+    margin: 0px;
+    padding: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.credit-card-img-div-pk{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.credit-card-img-div-pk>span{
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: rgb(95, 136, 163);
+}
+
+.credit-cards-img-div-create-pk{
+    width: 2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    background-size: contain;
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+}
+.credit-first-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/visa.png);
+    
+}
+.credit-second-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/mastercard.png);
+}
+.credit-third-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/amx.png);
+}
+.credit-fourth-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/rupay.png);
+}
+.credit-fifth-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/dinersClub.png);
+}
+.debit-third-img-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/mestro.png);
+}
+.credit-card-main-pk>hr{
+    display: block;
+    width: 96%;
+    border: 1px dashed rgb(152, 184, 197);
+    margin-left: 0px;
+}
+.credit-input-div-pk{
+    display: flex;
+    margin: 1rem 0px;
+    /* width: 100%; */
+    /* justify-content: space-between; */
+
+    /* border: 1px solid teal; */
+}
+.credit-no-expiry-div-pk{
+    width: 50%;
+    margin-right: 50px;
+    /* border: 1px solid red; */
+}
+.card-no-inp-tag-pk{
+    width: 100%;
+    height: 1rem;
+    /* width: 20rem; */
+    padding: 1rem;
+    margin: 0px 2rem 0px 0px;
+    border-radius: 3px;
+    border: 1px solid rgb(201, 227, 239);
+    font-size: 1rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+.credit-expiry-div-pk{
+    /* border: 5px solid green; */
+    width: 50%;
+    height: 1rem;
+    /* width: 20rem; */
+    padding: 1rem;
+    margin: 0px 2rem 0px 0px;
+    border-radius: 3px;
+    border: 1px solid rgb(201, 227, 239);
+    font-size: 1rem;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    color: rgb(95, 136, 163);
+    /* border: 5px solid green; */
+}
+.credit-expiry-title-pk{
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    font-size: 0.87rem;
+    background: white;
+    color: rgb(161, 192, 213);
+}
+.credit-expiry-select-tag-pk{
+    border: none;
+    font-size: 0.87rem;
+    background: white;
+    color: gray;
+    /* color: rgb(161, 192, 213); */
+}
+.credit-expiry-month-pk{
+    width: 40%;
+    border-right: 1px solid rgb(217, 229, 234);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+.credit-expiry-year-pk{
+    width: 40%;
+    border-right: 1px solid rgb(217, 229, 234);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-weight: 600;
+    /* cursor: pointer; */
+}
+.credit-expiry-select-tag-pk{
+    cursor: pointer;
+}
+.credit-cvv-input-tag-pk{
+    width: 6rem;
+}
+.credit-cvv-img-tag-pk{
+    margin-left: -4.5rem;
+    width: 2rem;
+    height: 1.5rem;
+}
+.credit-name-div-pk{
+    width: 42%;
+    margin-right: 50px;
+}
+.credit-pay-btn-div-pk{
+    margin-top: 2rem;
+    width: 98%;
+    text-align: end;
+    /* right: 2rem;
+    position: absolute;
+    bottom: 8rem; */
+}
+.credit-pay-btn-pk{
+    background-color: #29b43c;
+    color: rgb(255, 255, 255);
+    border: 1px solid #29b43c;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: large;
+    /* align-self: flex-end; */
+}

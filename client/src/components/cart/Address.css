@@ -1,0 +1,90 @@
+.address_container-pk{
+    /* border: 1px solid red; */
+    position: fixed;
+    width: 500px;
+    height: 100vh;
+    top: 8vh;
+    right: 0;
+    background-color: #fff;
+    transition: 0.3s;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.add-adrs-heading-pk{
+    background-color: rgb(233, 248, 255);
+    margin-top: 0px;
+    padding: 1.5rem 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(113, 128, 145);
+}
+.address-input-field-div-pk>p{
+    /* margin: 1.88rem 2rem 0px; */
+    color: rgb(84, 135, 168);
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    /* border: 1px solid teal; */
+}
+.address-input-field-div-pk{
+    margin-top: 20px;
+    padding: 0.2rem 2rem;
+}
+
+.al-inp-cont-pk{
+    display: flex;
+    flex-direction: column;
+}
+.adrs-inp-tag-pk{
+    outline: none;
+    /* border: 1px solid rgba(221, 216, 216, 0.904); */
+    color: rgba(77, 73, 73, 0.904);
+    font-size: 1rem;
+    font-weight: 540;
+    width: 40%;
+    margin-bottom: 1.2rem;
+
+    border: 1px solid rgb(216, 226, 231);
+    padding: 0.7rem;
+    border-radius: 3px;
+}
+.flex-inp-div-pk{
+    display: flex;
+    justify-content: space-between;
+}
+.al-inp-cont-pk>div{
+    margin: 0.6rem 0px;
+}
+
+.width100-pk{
+    width: 100%;
+    position: relative;
+    /* margin-right: 1rem; */
+}
+.adrs-save-btn-div-pk{
+    margin-top: 34%;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0px;
+    padding: 0.6rem 0px;
+    /* z-index: 99; */
+    width: 100%;
+    background: rgb(101, 171, 11);
+    text-align: center;
+    color: white;
+    /* cursor: pointer; */
+    border-radius: 3px;
+}
+.adrs-save-btn-div-pk>button{
+    position: relative;
+    padding: 1rem 1.5rem;
+    /* align-self: center; */
+    /* width: 100%; */
+    /* background: rgb(101, 171, 11); */
+    /* color: white; */
+    /* border: 1px solid rgb(255, 255, 255); */
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* margin: auto; */
+}

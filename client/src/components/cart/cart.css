@@ -1,0 +1,336 @@
+  
+  .cartContainer-pk{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .cartPage-leftDiv-pk{
+    width: 60%;
+   
+    /* border: 1px solid teal; */
+    margin-left: -20%;
+  }
+  
+  .cartPage-left-topDiv-pk{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0px 1.5rem 0.5rem;
+    font-weight: 600;
+  }
+  .cartPage-left-topDiv-pk>div{
+    margin-right: 15px;
+  }
+  .cartPage-left-topDiv-pk>div>button{
+    border: 0px;
+      background-color: transparent;
+      color: rgb(0, 102, 167);
+      padding: 0.563rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: capitalize;
+      outline: none;
+  }
+  .cartItem-container-pk{
+    display: flex;
+    padding: 5px;
+    /* border: 1px solid black; */
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1.1rem;
+    justify-content: space-between;
+  }
+  .address-container-pk{
+    padding: 15px 0px;
+  }
+  .cartItem-image-pk{
+    /* border: 1px solid greenyellow; */
+    width: 7.2rem;
+    height: 6.6rem;
+    position: relative;
+    margin: 1rem;
+  }
+  .cartItem-image-pk>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+  }
+  
+  .cartItem-desc-pk{
+    width: 80%;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .cartItem-desc-pk>div:first-child{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .cart-item-desc-pk{
+    /* border: 1px solid teal; */
+    font-size: 0.9rem;
+    color: rgb(100, 129, 143);
+    padding: 0.5rem 0px;
+    width: 70%;
+    display: block;
+  }
+  .cart-item-title-pk{
+    margin-bottom: -5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: block;
+  }
+  .cartItem-price-buttons-pk{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 20px;
+  }
+  .cartItem-buttons-pk{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 10px;
+  }
+  .cartItem-buttons-pk>div:first-child{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/delete_icon.svg);
+    background-size: 100% 100%;
+    width: 1.5rem;
+    height: 0.9rem;
+  }
+  .cartItem-buttons-pk>span{
+    border: 1px solid gray;
+    border-top: none;
+    border-bottom: none;
+    width: 20px;
+    text-align: center;
+  }
+  .cartItem-buttons-pk>div:last-child{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/plus.svg);
+    background-size: 100% 100%;
+    width: 1.5rem;
+    height: 0.9rem;
+  }
+  .cursor-pointer-pk{
+    cursor: pointer;
+  }
+  
+  .cartPage-rightDiv-pk{
+    width: 300px;
+    position: fixed;
+    height: 600px;
+    /* top: 70px; */
+    right: 50px;
+    /* border: 1px solid teal; */
+  }
+  
+  .cartPage-right-topDiv-pk{
+    margin: 1.5rem 0px 1.5rem 0.5rem;
+    font-weight: 600;
+  }
+  
+  .address-container-pk{
+    display: flex;
+  }
+  .adrs-icon-div-pk{
+    width: 15%;
+    float: left;
+    text-align: -webkit-center;
+  }
+  .adrs-icon-div-pk>div{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/myprofile_phone-call.svg);
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+    min-width: 1rem;
+    width: 1rem;
+    height: 1.5rem;
+    background-size: 1rem;
+    margin-top: 2.0rem;
+    
+  }
+  
+  .adrs-wrpr-div-pk{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* border: 1px solid green; */
+  }
+  
+  .current-heading-pk{
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+  .current-adrs-div-pk{
+    float: left;
+   
+  }
+  .current-adrs-div-pk > p:first-child{
+    margin-left: -20px;
+    margin-top: -10px;
+    font-size: 20px ;
+  }
+  .current-adrs-div-pk > p:last-child{
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+  }
+  .current-adrs-pk{
+    margin: 0px auto;
+    margin-top: -0.7rem;
+    color: rgb(179, 179, 179);
+    font-size: 0.81rem;
+    line-height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+  .edit-adrs-pk{
+    font-weight: 600;
+    color: rgb(0, 115, 170);
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  .change-adrs-btn-pk{
+    align-self: center;
+    margin: 0.5rem 0px;
+    float: right;
+    width: 30%;
+  }
+  .change-adrs-btn-pk>button{
+    background-color: rgb(101, 171, 11);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(101, 171, 11);
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+  }
+  button{
+    cursor: pointer;
+  }
+  .box-shadow-pk{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+  .select-offer-div-pk{
+    max-width: 100%;
+    flex-basis: auto;
+    border-radius: 3px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1.2rem;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    -webkit-box-align: center;
+    align-items: center;
+  }
+  .offer-icon-pk{
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/offer_icon.svg);
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-self: center;
+    height: 1.2rem;
+    width: 1.8rem;
+  }
+  .offer-text-pk{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 65%;
+  }
+  .offer-text-upper-pk{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .offer-text-lower-pk{
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+  }
+  .offer-text-arrow-pk{
+    position: relative;
+    width: 1.2rem;
+    height: 1rem;
+    cursor: pointer;
+    transform: rotate(270deg);
+    background-image: url(https://pizzaonline.dominos.co.in/static/assets/icons/down_arrow.svg);
+    min-width: 0.3em;
+    min-height: 0.3em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .price-details-div-pk{
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    padding: 0.5rem 1rem 1rem;
+  }
+  .price-text-wrpr-pk{
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0.3rem 0px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+  .tax-span-tag-pk{
+    display: flex;
+    align-items: center;
+  }
+  .tax-info-div-pk{
+    border-radius: 10px;
+    margin-left: 1rem;
+    width: 0.8rem;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgba(53, 53, 53, 0.87);
+    cursor: pointer;
+  }
+  .break-line-pk{
+    width: 100%;
+    border-bottom: 1px dashed rgb(194, 208, 214);
+    margin-bottom: 0.5rem;
+  }
+  .text-bold-pk{
+    font-weight: bold;
+  }
+  .place-btn-div-pk{
+    width: 100%;
+    align-self: center;
+    margin: 1rem 0px 0.5rem;
+    background: rgb(130, 187, 55);
+    text-align: center;
+    color: white;
+  }
+  .cart-place-order-btn-pk{
+    padding: 0.7rem 1.5rem;
+    width: 100%;
+    height: 2.5rem;
+    background: #82bb37;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+  }
+  

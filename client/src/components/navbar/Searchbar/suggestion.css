@@ -1,0 +1,18 @@
+.search_suggestion_div{
+    margin-top: 1px;
+    border: 1px solid grey;
+    padding: 10px 5px;
+    display: flex;
+    border-radius: 5px;
+   
+    /* text-align: center; */
+}
+.search_suggestion_div>div{
+    text-align: center;
+    /* border: 1px solid green; */
+}
+.search_suggestion_div>div:last-child{
+    width: 70%;
+    margin-top: 10px;
+    margin-left: 10px;
+}

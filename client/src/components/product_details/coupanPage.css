@@ -1,0 +1,15 @@
+.Appliedcss{
+    animation-name: alert;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+
+}
+@keyframes alert {
+    0%{
+        top: 0%;
+
+    }
+    100%{
+        top:5%;
+    }
+}

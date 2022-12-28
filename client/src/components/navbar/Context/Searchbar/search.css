@@ -1,0 +1,117 @@
+.search_body{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  
+    /* background: #297eff; */
+    transition: 0.3s;
+    z-index: 500;
+}
+.search{
+    position: relative;
+    width: 360px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    transition: 0.5s;
+    box-shadow: 0 0 0 5px rgb(9,92,145);
+    overflow: hidden;
+}
+.search .searchicon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.search .searchicon::before{
+    content: ' ';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(9,92,145);
+    border-radius: 50%;
+    transform: translate(-4px,-4px) ;
+}
+
+.search .searchicon::after{
+    content: ' ';
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background:  rgb(9,92,145);
+    transform: translate(6px,6px) rotate(315deg);
+}
+.search .input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    left: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search .input input{
+    position: absolute;
+    top: 0;
+    
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline:none ;
+    font-size: 18px;
+    padding: 10px 0;
+
+}
+.search_clear{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+  
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: 100000; */
+}
+.search_clear::before{
+    position: absolute;
+    content:' ' ;
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+.search_clear::after{
+    position: absolute;
+    content:' ' ;
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+/* .input{
+    background-color: red;
+}
+.search{
+    background-color: green;
+} */
+.search_bar_suggestions{
+    position: absolute;
+    top: 70px;
+    /* border: 1px solid teal; */
+   z-index: 1000;
+   background-color: #fff;
+    width: 90%;
+    /* background-color: red; */
+}

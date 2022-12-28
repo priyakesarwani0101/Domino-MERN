@@ -1,0 +1,181 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0.5em 1em 1.5em ;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px 0 #708aa5 ;
+    margin-bottom: 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.header img {
+    margin-top: -15px;
+}
+
+.head-links {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-weight: 600;
+    color: #708aa5; 
+    margin-top: 15px;
+}
+
+.head-links a {
+    text-decoration: none;
+    color: #708aa5;
+}
+
+#downloadBtn {
+    width: 148px;
+    height: 45px;
+    border-radius: 3px;
+    background-color: #f3223b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none ;
+    color: white;
+    font-weight: 500;
+}
+
+.carousel-title {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.31;
+    color: #708aa5;
+    text-transform: none;
+    font-family: "proximaBold";
+    
+}
+#explore-items{
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* 
+.explore-card img {
+    width: 60px;
+}
+*/
+.explore-card h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.explore-card p {
+    font-size: 18px;
+}
+
+.explore-card h5 {
+    font-weight: bolder;
+    font-size: 18px;
+    color: red;
+} 
+
+.explore-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 8px;
+    cursor: pointer;
+    padding: 20px;
+    object-fit: contain;
+    width: 100%;
+    height: 18rem;
+    border: 1px solid #d3d3d3;
+
+}
+
+#container {
+    width: 90%;
+    margin: auto;
+}
+
+.download{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #f2f5fc;
+    margin-top: 50px;
+    width: 100%;
+}
+.lower-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lower-btn button{
+    padding: 1px 5px ;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    font-size: 15px;
+     background-color: rgb(125, 143, 163);
+     border-radius: 5px;
+}
+
+#card-span{
+    border: 0.1px solid gray;
+    width: 200px;
+    margin-top: -10px;
+}
+
+.first-info,.second-info,.third-info,.fourth-info {
+    letter-spacing: 1px;
+    margin-top: 20px;
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    .header {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .header img {
+        width: 80px;
+    }
+
+    .head-links li a{
+        font-size: 10px;
+    }
+
+    .head-links li{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #downloadBtn{
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}

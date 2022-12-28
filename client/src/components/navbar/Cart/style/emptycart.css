@@ -1,0 +1,35 @@
+.empty_Cart_DIv {
+
+padding-top: 50px;
+
+}
+.empty_Cart_DIv>div{
+    /* border: 1px solid red; */
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.empty_Cart_DIv>div>img{
+    /* width:200%; */
+    /* border: 2px solid yellow; */
+    margin: auto;
+    margin-bottom: 20px;
+}
+.empty_cart_details+div{
+ /* border: 2px solid green; */
+ margin-top: 20px;
+  padding: 0 25px;
+
+}
+.empty_Cart_DIv > button{
+    margin-top: 20px;
+    border: none;
+    /* width: 40%; */
+    margin-left: 125px;
+    background-color: rgb(11,99,156);
+    color: white;
+    font-weight: bold;
+   padding: 7px 20px;
+   border-radius: 10px;
+   transition: 0.5s;
+}
