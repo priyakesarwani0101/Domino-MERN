@@ -4,7 +4,8 @@ const jwt = require('jsonwebtoken');
 const config = require('../config');
 
 function generateToken(user){
-    if(user.phoneNum){
-        
+    if(user.phoneNumber){
+
     }
+    return jwt.sign(user, config.JWT_SECRET_KEY);
 }
