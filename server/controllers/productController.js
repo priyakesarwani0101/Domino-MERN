@@ -35,3 +35,16 @@ async function findPaginated({
       products,
     };
   }
+
+
+  async function createProduct(productData) {
+    const product = await ProductModel.create({
+      title: productData.title,
+      image: productData.image,
+      category: productData.category,
+      ratings: productData.ratings,
+      price: productData.price });
+  
+  
+    return product;
+  }

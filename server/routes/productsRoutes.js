@@ -20,3 +20,24 @@ productRouter.get('/products', auth,  async (req, res) => {
         data: products
     })
 })
+
+// CREATE
+productRouter.post('/product', async (req, res) => {
+
+    const productData = req.body;
+
+    let product = null;
+    try {
+        product = await productControllers.createProduct(userId, productData);
+    } catch(err) {
+        console.error(err.message);
+
+        return res.status(500).send({
+            message: err.message // 'Server ran into an unexpected error'
+        })
+    }
+
+    return res.send({
+        data: product
+    });
+})
