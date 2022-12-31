@@ -1,0 +1,921 @@
+{
+  "domino_data": {
+    "veg_pizza": [
+      {
+        "id": 1,
+        "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+        "title": "Margherita everyday ss pizza",
+        "price": 180,
+        "ratings": 3.6,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 2,
+        "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
+        "title": "Caprese Gourmet Pizza",
+        "price": 390,
+        "ratings": 4,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 3,
+        "image": "https://i.ytimg.com/vi/fHo1j3VF7VE/maxresdefault.jpg",
+        "title": "Farmhouse cheese burst pizza",
+        "price": 460,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 4,
+        "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
+        "title": "Peppy paneer pizza",
+        "price": 385,
+        "ratings": 3.9,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 5,
+        "image": "https://bizknow.in/PizzaHouse/images/Veg-Pizza/Peppy%20Paneer%20Pizza.jpg",
+        "title": "Pizza house",
+        "price": 295,
+        "ratings": 3.5,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 6,
+        "image": "https://img-global.cpcdn.com/recipes/27026a9b07074850/1200x630cq70/photo.jpg",
+        "title": "Capsicum cheese and corn pizza",
+        "price": 400,
+        "ratings": 4.1,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 7,
+        "image": "https://www.spicypunch.com/wp-content/uploads/2020/07/veg-pizza.jpg",
+        "title": "Fresh veggie pizza",
+        "price": 450,
+        "ratings": 4.3,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 8,
+        "image": "https://www.readyseteat.com/sites/g/files/qyyrlu501/files/uploadedImages/img_10192_70201.jpg",
+        "title": "Plant based mexican pizza",
+        "price": 600,
+        "ratings": 3.7,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 9,
+        "image": "https://res.cloudinary.com/gonation/w_2500/q_auto/f_auto/gonation.data.prod/rpa72ptntbwv35wxnpzd",
+        "title": "Paradise pizza",
+        "price": 250,
+        "ratings": 3,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 10,
+        "image": "https://static.toiimg.com/thumb/59202050.cms?width=1200&height=900",
+        "title": "Red bell pepper-corn pizza",
+        "price": 320,
+        "ratings": 4.4,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 11,
+        "image": "https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/lvhvocjkakabphxah8ll",
+        "title": "Green burst pizza",
+        "price": 290,
+        "ratings": 4.1,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 12,
+        "image": "https://www.vegrecipesofindia.com/wp-content/uploads/2018/05/indian-paneer-pizza-recipe.jpg",
+        "title": "Paneer pizza",
+        "price": 195,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 13,
+        "image": "https://www.mashed.com/img/gallery/how-authentic-pizza-is-different-from-the-american-version/intro-1606849151.jpg",
+        "title": "Pepperoni pizza",
+        "price": 420,
+        "ratings": 4,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 14,
+        "image": "https://images.jdmagicbox.com/quickquotes/images_main/garden-fresh-veggie-pizza-11-inch-380221300-3d8x4.jpg",
+        "title": "Garden fresh veggie pizza",
+        "price": 340,
+        "ratings": 3.9,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 15,
+        "image": "https://lh3.googleusercontent.com/pGt3zE4FPquWWNwSzpOl2zVIg2Fobis5aCgxDQ-41ThotdoyR8Vt71VXDWbPWEYHlJ_Zksc_WsbdctQIO97QgPlmf4OUbgx6O37dDTH4=w512-rw",
+        "title": "Veggie loaded pizza",
+        "price": 280,
+        "ratings": 4,
+        "quantity": 1,
+        "category": "veg_pizza"
+      },
+      {
+        "id": 16,
+        "image": "https://vegplatter.in/files/public/images/partner/catalog/125/Farm%20House%20Pizza.jpg",
+        "title": "Farm veg platter",
+        "price": 320,
+        "ratings": 4.1,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 17,
+        "image": "https://www.cookingclassy.com/wp-content/uploads/2020/08/french-bread-pizza-1.jpg",
+        "title": "french bread pizza",
+        "price": 200,
+        "ratings": 4.2,
+        "quantity": 1,
+        "category": " veg_pizza"
+      },
+      {
+        "id": 18,
+        "image": "https://i.ytimg.com/vi/tDpKXR_xfzk/maxresdefault.jpg",
+        "title": "Bread pizza",
+        "price": 120,
+        "ratings": 4.2,
+        "quantity": 1,
+        "category": " veg_pizza"
+      }
+    ],
+    "pasta": [
+      {
+        "id": 101,
+        "title": "MOROCCAN SPICE PASTA VEG",
+        "price": 145,
+        "description": "Instant Fusilli Pasta, Harissa Sauce, Onion, Mushroom, Olives, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/MoroccanPastaVeg_N_(1).jpg",
+        "ratings": 4,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 102,
+        "title": "TIKKA MASALA PASTA VEG",
+        "price": 129,
+        "description": "Instant Fusilli Pasta, Spicy Red dressing, Onion, Paneer Tikka, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/PaneerTikkaMasala_N.jpg",
+        "ratings": 3.5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 103,
+        "title": "CREAMY TOMATO PASTA VEG",
+        "price": 145,
+        "description": "Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olive, Green Capsicum, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/CreamyTomatoVeg_N_(3).jpg",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 104,
+        "title": " Pasta alla Norma",
+        "price": 160,
+        "description": "Pasta alla Norma is one of Sicily’s most loved pasta dishes",
+        "image": "https://media-cdn.greatbritishchefs.com/media/a3qhmcs0/img72629.jpg?mode=crop&width=768&height=512",
+        "ratings": 3.6,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 105,
+        "title": "Roasted Vegetable Pasta",
+        "price": 140,
+        "description": "This easy vegetable pasta pairs spaghetti with colorful roasted veggies! It’s a healthy dinner idea for loading up on the good stuff.   ",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2021/11/Vegetable-Spaghetti-002-768x960.jpg",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 106,
+        "title": "Cheese Tortellini in Creamy Marinara",
+        "price": 170,
+        "description": "Cheese tortellini makes the best quick dinner recipe! Serve it up in a creamy marinara sauce flavored with goat cheese and basil.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2021/03/Cheese-Tortellini-011-735x919.jpg",
+        "ratings": 3,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 107,
+        "title": "Vegetarian Lasagna with Ricotta",
+        "price": 125,
+        "description": "This vegetarian lasagna recipe is a total crowd pleaser! The easy spinach and ricotta cheese filling is classic and creamy.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/12/Vegetarian-Lasagna-011-735x980.jpg",
+        "ratings": 4,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 108,
+        "title": "Pomodoro Sauce",
+        "price": 120,
+        "description": "Pomodoro sauce is a classic Italian tomato-based pasta sauce that makes any noodle shine!",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2022/11/Pasta-Pomodoro-009-735x919.jpg",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 109,
+        "title": "Easy Stuffed Shells",
+        "price": 150,
+        "description": "This stuffed shells recipe is easy and a crowd pleaser! The ricotta stuffed pasta shells swimming in tomato sauce are a hit every time.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2022/09/Stuffed-Shells-002-735x919.jpg",
+        "ratings": 3.5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 110,
+        "title": "Baked Rigatoni Pasta",
+        "price": 160,
+        "description": "pasta with garlicky tomato sauce, fresh basil, and gooey mozzarella.",
+        "image": "https://www.acouplecooks.com/wp-content/uploads/2020/06/Baked-Rigatoni-013-735x919.jpg",
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "veg pasta"
+      },
+      {
+        "id": 111,
+        "title": "CREAMY TOMATO PASTA NON VEG",
+        "price": 285,
+        "description": "Instant Fusilli Pasta, Creamy Culinary Dressing, Onion, Olives, BBQ Pepper Chicken, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/CreamyTomatoNV_N.jpg",
+        "ratings": 3,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 112,
+        "title": "TIKKA MASALA PASTA NON VEG",
+        "price": 155,
+        "description": "Instant Fusilli Pasta, Spicy Red dressing, Onion, Chicken Tikka, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/ChickenTikkaMasala_N.jpg",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 113,
+        "title": "MOROCCAN SPICE PASTA NON VEG",
+        "price": 165,
+        "description": "Instant Fusilli Pasta, Harissa Sauce, Onion, Olives, Meatballs, Parsley sprinkle",
+        "image": "https://www.dominos.co.in//files/items/MoroccanPastaNonVeg_N.jpg",
+        "ratings": 3.5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 114,
+        "title": "Chicken Tetrazine",
+        "price": 285,
+        "description": "The combination of chicken, mushrooms, cheese and spaghetti makes this baked recipe absolutely irresistible.",
+        "image": "https://c.ndtvimg.com/2018-11/iaoeh1p8_chicken-tetrazine_625x300_30_November_18.jpg",
+        "ratings": 4,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 115,
+        "title": "Pesto Penne Pasta with Smoked Chicken",
+        "price": 325,
+        "description": "Toss it up with penne and throw in some smoked chicken and plump cherry tomatoes",
+        "image": "https://www.ndtv.com/cooks/images/pesto.pasta.jpg",
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 116,
+        "title": "Spaghetti Carbonara",
+        "price": 175,
+        "description": "Crispy chicken, garlic and onions are tossed with cooked spaghetti and egg.",
+        "image": "https://www.ndtv.com/cooks/images/spaghetti_620x330_41506078754.jpg",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 117,
+        "title": "Chicken Penne Arabbiata",
+        "price": 190,
+        "description": "Spicy tomato sauce, tender chicken chunks, aromatic herbs",
+        "image": "https://c.ndtvimg.com/2020-09/g3o5hlh_pasta_625x300_29_September_20.jpg",
+        "ratings": 3,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 118,
+        "title": "Chicken Lasagne",
+        "price": 375,
+        "description": "White wine infused chicken dumplings, lasagna roundels and bechamel sauce cooked together and served with poultry.",
+        "image": "https://i.ndtvimg.com/i/2016-04/lasgana_625x350_51459504335.jpg",
+        "ratings": 3.5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 119,
+        "title": "Chicken Pasta",
+        "price": 265,
+        "description": " Penne pasta with a whole lot of spices, carrots, beans, celery and chilli flakes loaded with shredded cheese",
+        "image": "https://i.ndtvimg.com/i/2017-08/spicy-chicken-pasta_650x400_81503903192.jpg",
+        "ratings": 4,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 120,
+        "title": "Spaghetti Bolognese",
+        "price": 495,
+        "description": "one pot meal with Bolognese sauce which is a meat-based sauce for pasta",
+        "image": "https://i.ndtvimg.com/i/2016-05/spaghetti_625x350_41462301394.jpg",
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      },
+      {
+        "id": 121,
+        "title": "Chicken and Mushroom Pasta",
+        "price": 582,
+        "description": "It is a combination of the goodness and taste of both mushroom and chicken laden with creamy and cheesy white sauce.",
+        "image": "https://c.ndtvimg.com/2022-02/cphobl9_white-sauce-pasta_625x300_17_February_22.jpg?im=FaceCrop,algorithm=dnn,width=620,height=350",
+        "ratings": 5,
+        "quantity": 1,
+        "category": "non veg pasta"
+      }
+    ],
+    "pizza_mania": [
+      {
+        "id": 1001,
+        "image": "https://www.dominos.co.in//files/items/pizza_mania_tomato.png",
+        "title": "TOMATO",
+        "price": 59,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1002,
+        "image": "https://www.dominos.co.in//files/items/PrimeLoadedL.jpg",
+        "title": "VEG LOADED",
+        "price": 119,
+        "ratings": 4.4,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1003,
+        "image": "https://www.dominos.co.in//files/items/PrimeCheesyL.jpg",
+        "title": "CHEESY",
+        "price": 95,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1004,
+        "image": "https://www.dominos.co.in//files/items/Paneer_Special.jpg",
+        "title": "PANEER & ONION",
+        "price": 89,
+        "ratings": 4.3,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1005,
+        "image": "https://www.dominos.co.in//files/items/CapsicumVeg.jpg",
+        "title": "CAPSICUM",
+        "price": 69,
+        "ratings": 4.4,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1006,
+        "image": "https://www.dominos.co.in//files/items/onion_veg.jpg",
+        "title": "ONION",
+        "price": 59,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1007,
+        "image": "https://www.dominos.co.in//files/items/golden_corn_veg.jpg",
+        "title": "GOLDEN CORN",
+        "price": 79,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1008,
+        "image": "https://www.dominos.co.in//files/items/cheese_and_tomato.png",
+        "title": "CHEESE N TOMATO",
+        "price": 305,
+        "ratings": 4.9,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1009,
+        "image": "https://www.dominos.co.in/files/items/PrimeLoadedL.jpg",
+        "title": "CHEESE TOMATO N OLIVES",
+        "price": 360,
+        "ratings": 4.9,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1010,
+        "image": "https://5.imimg.com/data5/KI/LC/GLADMIN-15621787/margerita-pizza-500x500.png",
+        "title": "MARGERITA",
+        "price": 329,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1011,
+        "image": "https://5.imimg.com/data5/IN/OA/GLADMIN-15621787/cheese-onion-tomato-pizza-500x500.png",
+        "title": "CHEESE-ONION-TOMATO",
+        "price": 356,
+        "ratings": 4.7,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1012,
+        "image": "https://5.imimg.com/data5/HA/WD/GLADMIN-15621787/exotica-pizza-500x500.png",
+        "title": "EXOTICA PIZZA",
+        "price": 449,
+        "ratings": 4.6,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1013,
+        "image": "https://www.dominos.co.in/files/items/LoadedC.jpg",
+        "title": "CHEESE CRUNCH",
+        "price": 412,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1014,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/PepperBarbequeChickenC-1.jpg",
+        "title": "PEPPER BARBEQUE CHICKEN",
+        "price": 442,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1015,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/424X431pix_Fresh_Veggie-01.jpg",
+        "title": "FRESH VEGGIE",
+        "price": 110,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1016,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/PrimeLoadedC.jpg",
+        "title": "VEG LOADED PIZZA",
+        "price": 250,
+        "ratings": 4.9,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1017,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/PaneerMakhaniC.jpg",
+        "title": "PANEER MAKHANI",
+        "price": 260,
+        "ratings": 5,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1018,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/mexican_green_wave.jpg",
+        "title": "MEXICAN GREEN WAVE",
+        "price": 260,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1019,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/LoadedL.jpg",
+        "title": "NONVEG LOADED PIZZA",
+        "price": 490,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      },
+      {
+        "id": 1020,
+        "image": "https://feenix.co.in/wp-content/uploads/2022/07/peppy_paneer.jpg",
+        "title": "PEPPY PANEER",
+        "price": 260,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "pizza_mania"
+      }
+    ],
+    "sides_beverages": [
+      {
+        "id": 401,
+        "category": "sides_beverages",
+        "title": "GARLIC BREADSTICKS",
+        "description": "The endearing tang of garlic in breadstics baked to perfection",
+        "image": "https://www.dominos.co.in/files/items/garlic-bread.webp",
+        "price": 95,
+        "quantity": 1,
+        "ratings": 3
+      },
+      {
+        "id": 402,
+        "category": "sides_beverages",
+        "title": "STUFFED GARLIC BREAD",
+        "description": "Freshly Baked Garlic Bread stuffed with mozzarella cheese, sweet corns & tangy and spicy jalapeÃ±os",
+        "image": "https://www.dominos.co.in/files/items/stuffed-garlic-breadstick_1346070564.webp",
+        "price": 139,
+        "quantity": 1,
+        "ratings": 3.3
+      },
+      {
+        "id": 403,
+        "category": "sides_beverages",
+        "title": "CHICKEN PEPPERONI STUFFED GARLIC BREAD",
+        "description": "Freshly Baked Garlic Bread stuffed with Delectable Chicken Pepperoni, Cheese and sprinkled with Basil Parsley",
+        "image": "https://www.dominos.co.in/files/items/BRD0031.webp",
+        "price": 175,
+        "quantity": 1,
+        "ratings": 3.5
+      },
+      {
+        "id": 404,
+        "category": "sides_beverages",
+        "title": "PANEER TIKKA STUFFED GARLIC BREAD",
+        "description": "Freshly Baked Stuffed Garlic Bread with Cheese, Onion and Paneer Tikka fillings. Comes with a dash of Basil Parsley Sprinkle",
+        "image": "https://www.dominos.co.in/files/items/BRD0030.webp",
+        "price": 175,
+        "quantity": 1,
+        "ratings": 3.5
+      },
+      {
+        "id": 405,
+        "category": "sides_beverages",
+        "title": "CHEESE JALAPENO DIP",
+        "description": "A soft creamy cheese dip spiced with jalapeno",
+        "image": "https://www.dominos.co.in/files/items/_thumb_17451.png",
+        "price": 139,
+        "quantity": 1,
+        "ratings": 3.9
+      },
+      {
+        "id": 406,
+        "category": "sides_beverages",
+        "title": "CHEESE DIP",
+        "description": "A dreamy creamy cheese dip to add that extra tang to your snack",
+        "image": "https://www.dominos.co.in/files/items/_thumb_17450.png",
+        "price": 25,
+        "quantity": 1,
+        "ratings": 3.4
+      },
+      {
+        "id": 407,
+        "category": "sides_beverages",
+        "title": "LAVA CAKE",
+        "description": "Filled with delicious molten chocolate inside",
+        "image": "https://www.dominos.co.in/files/items/choco-lava-cake-771.jpg",
+        "price": 109,
+        "quantity": 1,
+        "ratings": 4
+      },
+      {
+        "id": 408,
+        "category": "sides_beverages",
+        "title": "BUTTERSCOTCH MOUSSE CAKE",
+        "description": "A Creamy & Chocolaty indulgence with layers of rich, fluffy Butterscotch Cream and delicious Dark Chocolate Cake, topped with crunchy Dark Chocolate morsels - for a perfect dessert treat!",
+        "image": "",
+        "price": 109,
+        "quantity": 1,
+        "ratings": 3.8
+      },
+      {
+        "id": 409,
+        "category": "sides_beverages",
+        "title": "RED VELVET LAVA CAKE",
+        "description": "A truly indulgent experience with sweet and rich red velvet cake on a creamy cheese flavoured base to give a burst of flavour in",
+        "image": "",
+        "price": 145,
+        "quantity": 1,
+        "ratings": 3.9
+      },
+      {
+        "id": 410,
+        "category": "sides_beverages",
+        "title": "TACO MEXICANA VEG",
+        "description": "A crispy flaky wrap filled with Mexican Arancini Bean Patty rolled over a creamy Harissa Sauce",
+        "image": "https://www.dominos.co.in/files/items/Main_Menu-VG.jpg",
+        "price": 145,
+        "quantity": 1,
+        "ratings": 4
+      },
+      {
+        "id": 411,
+        "category": "sides_beverages",
+        "title": "TACO MEXICANA NON VEG",
+        "description": "A crispy flaky wrap filled with Hot and Smoky Chicken Patty rolled over a creamy Harissa Sauce",
+        "image": "https://www.dominos.co.in/files/items/Main_Menu-NVG.jpg",
+        "price": 175,
+        "quantity": 1,
+        "ratings": 4.1
+      },
+      {
+        "id": 412,
+        "category": "sides_beverages",
+        "title": "VEG PARCEL",
+        "description": "",
+        "image": "https://www.dominos.co.in/files/items/150135_AHA_Menu_main_1.jpg",
+        "price": 45,
+        "quantity": 1,
+        "ratings": 3
+      },
+      {
+        "id": 413,
+        "category": "sides_beverages",
+        "title": "CHICKEN PARCEL",
+        "description": "",
+        "image": "https://www.dominos.co.in/files/items/150135_Aha_Non_Veg_439x307-01.jpg",
+        "price": 55,
+        "quantity": 1,
+        "ratings": 3.8
+      },
+      {
+        "id": 414,
+        "category": "sides_beverages",
+        "title": "CRUNCHY STRIPS",
+        "description": "Oven baked wheat thin crips with peri peri seasoning with a cheesy dip",
+        "image": "https://www.dominos.co.in/files/items/crunchy_strips.png",
+        "price": 75,
+        "quantity": 1,
+        "ratings": 3.3
+      },
+      {
+        "id": 415,
+        "category": "sides_beverages",
+        "title": "POTATO CHEESE SHOTS",
+        "description": "Crisp and golden outside,flavorful burst of cheese, potato & spice inside",
+        "image": "https://www.dominos.co.in/files/items/potato_cheese_shots.png",
+        "price": 85,
+        "quantity": 1,
+        "ratings": 3.7
+      },
+      {
+        "id": 416,
+        "category": "sides_beverages",
+        "title": "TACO MEXICANA-VEG(SINGLE)",
+        "description": "Truly irresistible! Crispy taco with a decicious veg patty & creamy sauce",
+        "image": "https://www.dominos.co.in/files/items/taco.png",
+        "price": 85,
+        "quantity": 1,
+        "ratings": 3.7
+      },
+      {
+        "id": 417,
+        "category": "sides_beverages",
+        "title": "CRINKLE FRIES",
+        "description": "Crispy wavy masala coated fries served with a spicy tomato chilli sauce",
+        "image": "https://www.dominos.co.in/files/items/crinkle_fries.png",
+        "price": 75,
+        "quantity": 1,
+        "ratings": 3.2
+      },
+      {
+        "id": 418,
+        "category": "sides_beverages",
+        "title": "BROWNIE FANTASY",
+        "description": "Sweet Temptation! Hot Chocolate Brownie drizzled with chocolate fudge sauce",
+        "image": "https://www.dominos.co.in/files/items/brownie_fantasy.png",
+        "price": 59,
+        "quantity": 1,
+        "ratings": 4
+      },
+      {
+        "id": 419,
+        "category": "sides_beverages",
+        "title": "Pepsi (500ml)",
+        "description": "",
+        "image": "https://images.dominos.co.in/cart/BEV0119_1.jpg",
+        "price": 60,
+        "quantity": 1,
+        "ratings": 4.2
+      },
+      {
+        "id": 420,
+        "category": "sides_beverages",
+        "title": "B Natural Mixed Fruit from Himalayas(300ml)",
+        "description": "",
+        "image": "https://images.dominos.co.in/cart/MIXEDFRUIT.jpg",
+        "price": 70,
+        "quantity": 1,
+        "ratings": 4
+      }
+    ],
+    "non_veg_pizza": [
+      {
+        "id": 701,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(14).png",
+        "title": "Chicken Golden Delight",
+        "price": 450,
+        "ratings": 4.7,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 702,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(13).png",
+        "title": "Non Veg Supreme",
+        "price": 609,
+        "ratings": 4.6,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 703,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(11).png",
+        "title": "Chicken Dominator",
+        "price": 609,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 704,
+        "image": "https://www.dominos.co.in//files/items/Pepper_Barbeque_&_Onion.jpg",
+        "title": "PEPPER BARBECUE & ONION",
+        "price": 385,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 705,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(15).png",
+        "title": "PEPPER BARBECUE CHICKEN",
+        "price": 455,
+        "ratings": 4.7,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 706,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(10).png",
+        "title": "CHICKEN FIESTA",
+        "price": 559,
+        "ratings": 4.6,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 707,
+        "image": "https://www.dominos.co.in//files/items/MicrosoftTeams-image_(18).png",
+        "title": "Indi Chicken Tikka",
+        "price": 295,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 708,
+        "img": "https://c.ndtvimg.com/2020-07/ds980vng_pizza_625x300_07_July_20.jpg",
+        "title": "Chicken Pepperoni",
+        "price": 365,
+        "rating": 4.5,
+        "quatity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 709,
+        "image": "https://www.dominos.co.in//files/items/CreamyTomatoPPVG.jpg",
+        "title": "Creamy Tomato Pasta Pizza - Non Veg",
+        "price": 509,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 710,
+        "image": "https://www.dominos.co.in//files/items/updated_keema_do_pyaza.webp",
+        "title": "Keema Do Pyaza",
+        "price": 455,
+        "ratings": 4.8,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      },
+      {
+        "id": 711,
+        "image": "https://www.dominos.co.in//files/items/MoroccanSpicePPNV_N.jpg",
+        "title": "Moroccan Spice Pasta Pizza - Non Veg",
+        "price": 509,
+        "ratings": 4.5,
+        "quantity": 1,
+        "category": "non_veg_pizza"
+      }
+    ]
+  },
+  "cartItems": [
+    {
+      "id": 1,
+      "image": "https://everydaypizza.in/wp-content/uploads/2022/07/Margherita-veg.jpg",
+      "title": "Margherita everyday ss pizza",
+      "price": 180,
+      "ratings": 3.6,
+      "quantity": 2,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 2,
+      "image": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/double-cheese.3c8885f8bc6f18facedc7626368f5105.1.jpg",
+      "title": "Caprese Gourmet Pizza",
+      "price": 390,
+      "ratings": 4,
+      "quantity": 1,
+      "category": "veg_pizza"
+    },
+    {
+      "id": 4,
+      "image": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1",
+      "title": "Peppy paneer pizza",
+      "price": 385,
+      "ratings": 3.9,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 6,
+      "image": "https://img-global.cpcdn.com/recipes/27026a9b07074850/1200x630cq70/photo.jpg",
+      "title": "Capsicum cheese and corn pizza",
+      "price": 400,
+      "ratings": 4.1,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 7,
+      "image": "https://www.spicypunch.com/wp-content/uploads/2020/07/veg-pizza.jpg",
+      "title": "Fresh veggie pizza",
+      "price": 450,
+      "ratings": 4.3,
+      "quantity": 1,
+      "category": " veg_pizza"
+    },
+    {
+      "id": 5,
+      "image": "https://bizknow.in/PizzaHouse/images/Veg-Pizza/Peppy%20Paneer%20Pizza.jpg",
+      "title": "Pizza house",
+      "price": 295,
+      "ratings": 3.5,
+      "quantity": 1,
+      "category": "veg_pizza"
+    }
+  ]
+}
