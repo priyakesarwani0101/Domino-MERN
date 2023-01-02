@@ -36,6 +36,7 @@ export const Login = async (req, res) => {
         .send({ message: "Please enter valid email and password" });
 
     const token = jsontoken(user);
+    console.log(token);
 
     return res.status(200).send({ token: token });
   } catch (error) {
