@@ -22,5 +22,6 @@ userDataschema.methods.checkPassword = function (password) {
 };
 
 const dominosuser = mongoose.model("user", userDataschema);
+console.log(dominosuser);
 
 export default dominosuser;
