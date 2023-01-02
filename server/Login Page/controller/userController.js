@@ -20,6 +20,7 @@ export const Signup = async (req, res) => {
 export const Login = async (req, res) => {
   try {
     const user = await dominosuser.findOne({ email: req.body.email });
+    console.log(user);
 
     if (!user)
       return res
@@ -27,7 +28,7 @@ export const Login = async (req, res) => {
         .send({ message: "Please enter valid email and password" });
 
     const match = user.checkPassword(req.body.password);
-    console.log(match)
+    console.log(match);
 
     if (!match)
       return res
