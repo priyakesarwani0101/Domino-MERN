@@ -5,14 +5,34 @@ import Cards from "./Card";
 import './product.css';
 const Pasta = () => {
  
-  const data = useSelector((state) => {
-    return state.data;
+  // const data = useSelector((state) => {
+  //   return state.data;
     
-  });
-  console.log(data.data);
-  let [state, setState] = useState([...data.data.pasta]);
+  // });
+  // console.log(data.data);
+  // let [state, setState] = useState([...data.data.pasta]);
 
   // console.log(vegPizza);
+
+
+  ////new code
+  let [state,setState] = useState([]);
+  let token = localStorage.getItem("token");
+
+  useEffect(()=>{
+    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/products',{
+      method:"GET",
+      headers:{
+        "Authorization":`Bearer${token}`
+      }
+       
+    }).then((res)=>res.json()).then((res)=>{
+      console.log(res.data);
+      setState([...res.data.filter((el)=>el.category==='veg_pasta'||el.category==='non_veg_pasta')]);
+    })
+  },[])
+
+  ///////
 
   const sortByPrice = (e) => {
     let Price = e.target.value;
@@ -94,7 +114,7 @@ const Pasta = () => {
       </div>
 
     <div id='productBox'>
-    {Object.keys(data).length > 0 ?
+    {state.length > 0 ?
        state.map((el)=>{
         return (
           <Cards props={el}/>

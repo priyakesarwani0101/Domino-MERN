@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-// import {useSelector} from 'react-redux'
 import './style/cart.css'
 import { navContext } from '../../Context/NavbarContext'
 import Cartcard from './Cartcard'
@@ -12,41 +11,51 @@ import {addToCart} from '../../../../Redux/action'
 import EmptyCart from '../../Cart/EmptyCart'
 
 const Cart = () => {
-  // const [cartdata,setCartData]=useState([]);
-  const cartData=useSelector((state)=>{
-    return  state.cartArr;
-  })
-   
+   const [cartData,setCartData]=useState([]);
  
-  
+ 
   const calculateAmount=cartData.reduce(((acc,e)=>{
       return (e.quantity*e.price)+acc;
     }),0)
 
   
-
-  const dispatch=useDispatch();
-  const [subtotal,setSubtotal]=useState(0);
+ let token = localStorage.getItem("token");
+  // const dispatch=useDispatch();
+  // const [subtotal,setSubtotal]=useState(0);
   
     const {showcart}=useContext(navContext);
     const {handleCart}=useContext(navContext);
 
     // let cartData = JSON.parse(localStorage.getItem("cartItems")) || [];
     // console.log(cartData)
+    const fetchData = ()=>{
+      fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+        method:"GET",
+        headers:{
+         
+          "Authorization":`Bearer ${token}`
+        }
+      }).then((res)=>res.json()).then((res)=>{
+        console.log(res);
+        setCartData([...res.products]);
+      })
+    }
    
 useEffect(()=>{
-  // fetchdata("http://localhost:3002/cartItems")
-  // //  console.log(cartData)
+  fetchData();
 },[])
-const fetchdata=async(url)=>{
-try{
-  const res= await fetch(url);
-const data=await res.json();
-dispatch(addToCart(data))
-}catch(e){
-  console.log(e);
-}
-}
+
+// fetchData();
+
+// const fetchdata=async(url)=>{
+// try{
+//   const res= await fetch(url);
+// const data=await res.json();
+// dispatch(addToCart(data))
+// }catch(e){
+//   console.log(e);
+// }
+// }
 
  
   return (
@@ -55,7 +64,7 @@ dispatch(addToCart(data))
        {
           cartData.length>0 ? cartData.map((el,index)=>{
             return(
-              <Flip_cart_card props={el} index={index} func={fetchdata}/>
+              <Flip_cart_card props={el} index={index} func={fetchData} />
             )
           }
           )

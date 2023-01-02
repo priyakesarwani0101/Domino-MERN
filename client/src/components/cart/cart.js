@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState,useEffect } from 'react'
 import './cart.css'
 import {Link} from  'react-router-dom'
 import { addressContext } from './addressContext/AddressContext'
@@ -11,30 +11,51 @@ import CouponPage from '../product_details/CouponPage'
 export default function Cart() {
     const [coupen,setCoupen]=useState(false);
     const {setopenAdress}=useContext(addressContext);
+    const [cartData,setCartData] = useState([]);
     const dispatch=useDispatch();
     const adressfunction = useContext(addressContext);
+
+    const token = localStorage.getItem("token");
 
      const coupenfunction=(value)=>{
         setCoupen(value);
      }
 
-    const cartData=useSelector((state)=>{
-        return  state.cartArr;
-      })
+    // const cartData=useSelector((state)=>{
+    //     return  state.cartArr;
+    //   })
 
       const calculateAmount=cartData.reduce(((acc,e)=>{
         return (e.quantity*e.price)+acc;
       }),0)
 
-      const fetchdata=async(url)=>{
-        try{
-          const res= await fetch(url);
-        const data=await res.json();
-        dispatch(addToCart(data))
-        }catch(e){
-          console.log(e);
+    //   const fetchdata=async(url)=>{
+    //     try{
+    //       const res= await fetch(url);
+    //     const data=await res.json();
+    //     dispatch(addToCart(data))
+    //     }catch(e){
+    //       console.log(e);
+    //     }
+    //     }
+    const fetchdata = ()=>{
+        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+        method:"GET",
+        headers:{
+         
+          "Authorization":`Bearer ${token}`
         }
-        }
+      }).then((res)=>res.json()).then((res)=>{
+        console.log(res);
+        setCartData([...res.products]);
+      })
+    }
+
+        useEffect(()=>{
+           fetchdata();
+        },[])
+
+    //    fetchdata();
 
   return (
     <div className='cartContainer-pk'>

@@ -6,14 +6,34 @@ import Footer from '../navbar/Footer/Footer'
 const NonvegPizza = () => {
  
 
-  const data = useSelector((state) => {
-    return state.data;
+  // const data = useSelector((state) => {
+  //   return state.data;
     
-  });
-  console.log(data.data);
-  let [state, setState] = useState([...data.data.non_veg_pizza]);
+  // });
+  // console.log(data.data);
+  // let [state, setState] = useState([...data.data.non_veg_pizza]);
  
   // console.log(vegPizza);
+
+
+  ////new code
+  let [state,setState] = useState([]);
+  let token = localStorage.getItem("token");
+
+  useEffect(()=>{
+    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/products',{
+      method:"GET",
+      headers:{
+        "Authorization":`Bearer ${token}`
+      }
+       
+    }).then((res)=>res.json()).then((res)=>{
+      console.log(res.data);
+      setState([...res.data.filter((el)=>el.category==='non_veg_pizza')]);
+    })
+  },[])
+
+  ///////
 
   const sortByPrice = (e) => {
     let Price = e.target.value;
@@ -94,7 +114,7 @@ const NonvegPizza = () => {
 
 
     <div id='productBox'>
-    {Object.keys(data).length > 0 ?
+    {state.length > 0 ?
        state.map((el)=>{
         return (
           <Cards props={el} key={el.id} />
