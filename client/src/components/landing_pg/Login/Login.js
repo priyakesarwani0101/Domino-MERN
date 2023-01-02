@@ -74,9 +74,24 @@ import {
     const compare = ()=>{
         // console.log(otp) ;
         // console.log(eOTP) ;
+        let user = {
+          password:eOTP,
+          mobileNo:mobileNumber
+        }
+
+        fetch('https://e520-103-175-180-42.in.ngrok.io/api/user/mobile',{
+          method:"POST",
+          body:JSON.stringify(user),
+          headers:{
+              "content-type":"application/json"
+          }    
+        }).then((res)=>res.json()).then((res)=>{
+          console.log(res.data.token);
+          localStorage.setItem("token",res.data.token);
+        })
 
 
-        if(otp == eOTP){
+        if(otp === eOTP){
             alert("login Success!") ;
             setEOTP('') ;
             setFlag(true) ;

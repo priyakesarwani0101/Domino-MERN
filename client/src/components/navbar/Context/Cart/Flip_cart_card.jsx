@@ -1,44 +1,51 @@
 import React from "react";
 import { useState } from "react";
 import {useDispatch} from 'react-redux';
-import {deletecart} from '../../../../Redux/action'
-import {incCount} from '../../../../Redux/action'
-import {decCount} from '../../../../Redux/action'
+import { json } from "react-router-dom";
 
 import './style/cartCard.css'
-const Flip_cart_card=({props,index, func})=>{
+const Flip_cart_card=({props,index,func})=>{
+  console.log(props);
   const dispatch=useDispatch();
     const [rotate,setrotate]=useState(false);
     const [backrotate,setbackrotate]=useState(false);
-   const cartdata= JSON.parse(localStorage.getItem("cartItems"))||[];
-const increaseCount= async ()=>{
- await  fetch(`http://localhost:3002/cartItems/${props.id}`,
- {
-  method:"PATCH",
-  body:JSON.stringify({
-    quantity:(props.quantity)+1
-  }),
-  headers:{
-    "Content-Type":"application/json",
-  }
- }
-    )
-       
-        func("http://localhost:3002/cartItems")
+   const [data,setData] = useState({})
+
+   let token = localStorage.getItem("token");
+const increaseCount=  ()=>{
+
+    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+    method:"POST",
+    body:JSON.stringify([props]),
+    headers:{
+      "Content-Type":"application/json",
+      "Authorization":`Bearer ${token}`
+    }
+  }).then((res)=>res.json()).then((res)=>{
+    console.log(res);
+    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+  })
+
+  
 }
-const decreaseCount=async ()=>{
-  await fetch(`http://localhost:3002/cartItems/${props.id}`,
- {
-  method:"PATCH",
-  body:JSON.stringify({
-    quantity:(props.quantity)-1
-  }),
-  headers:{
-    "Content-Type":"application/json",
-  }
- }
-    )
-    func("http://localhost:3002/cartItems")
+
+
+const decreaseCount= ()=>{
+
+   console.log(props);
+    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+    method:"PATCH",
+    body:JSON.stringify(props),
+    headers:{
+      "Content-Type":"application/json",
+      "Authorization":`Bearer ${token}`
+    }
+  }).then((res)=>res.json()).then((res)=>{
+    console.log(res);
+    setData({...res});
+    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+  })
+ 
 }
 
     const handleRemoveCart= async()=>{
@@ -47,19 +54,20 @@ const decreaseCount=async ()=>{
         setbackrotate(true);
         
         
-    await   fetch(`http://localhost:3002/cartItems/${props.id}`,
-        {
-         method:"DELETE",
+        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+          method:"DELETE",
+          body:JSON.stringify([props]),
+          headers:{
+            "Content-Type":"application/json",
+            "Authorization":`Bearer ${token}`
+          }
+        }).then((res)=>res.json()).then((res)=>{
+          console.log(res);
+          setData({...res});
+          func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+        })
 
-         headers:{
-           "Content-Type":"application/json",
-         }
-        }
-
- 
-        )
-
-        func("http://localhost:3002/cartItems")
+       
         
     }
     return(

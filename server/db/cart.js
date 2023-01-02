@@ -1,15 +1,23 @@
 const mongoose = require('mongoose')
 
-const ProductSchema = new mongoose.Schema({
-    
-    totalCartValue:String,
+const CartSchema = new mongoose.Schema({
+    products: [{
+        _id: mongoose.Types.ObjectId,
+        title: String,
+        image: String,
+        category: String,
+        price: Number,
+        ratings: Number,
+        quantity: { type: Number, default: 1 }
+    }],
+    subtotal: { type: Number, default: 0 },
     userId: mongoose.Types.ObjectId
 }, {
     timestamps: true
 })
 
-const ProductModel = mongoose.model('Product', ProductSchema);
+const CartModel = mongoose.model('Cart', CartSchema);
 
 module.exports = {
-    ProductModel
+    CartModel
 }

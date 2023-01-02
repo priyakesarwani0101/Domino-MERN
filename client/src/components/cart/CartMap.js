@@ -1,37 +1,43 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export const CartMap = ({props,func}) => {
+  const [data,setData] = useState({})
+  const token = localStorage.getItem("token");
 
-    const increaseCount= async ()=>{
-        await  fetch(`http://localhost:3002/cartItems/${props.id}`,
-        {
-         method:"PATCH",
-         body:JSON.stringify({
-           quantity:(props.quantity)+1
-         }),
-         headers:{
-           "Content-Type":"application/json",
-         }
-        }
-           )
-              
-               func("http://localhost:3002/cartItems")
+    const increaseCount=  ()=>{
+
+        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+    method:"POST",
+    body:JSON.stringify([props]),
+    headers:{
+      "Content-Type":"application/json",
+      "Authorization":`Bearer ${token}`
+    }
+  }).then((res)=>res.json()).then((res)=>{
+    console.log(res);
+    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+  })
+
+
        }
 
        const handleRemoveCart= async()=>{
        
         
         
-    await   fetch(`http://localhost:3002/cartItems/${props.id}`,
-        {
-         method:"DELETE",
+        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+          method:"DELETE",
+          body:JSON.stringify([props]),
+          headers:{
+            "Content-Type":"application/json",
+            "Authorization":`Bearer ${token}`
+          }
+        }).then((res)=>res.json()).then((res)=>{
+          console.log(res);
+          setData({...res});
+          func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+        })
 
-         headers:{
-           "Content-Type":"application/json",
-         }
-        }
-        )
-        func("http://localhost:3002/cartItems")
         
     }
 

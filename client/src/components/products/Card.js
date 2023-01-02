@@ -7,12 +7,16 @@ import { Box } from "@chakra-ui/react";
 
 const Cards = ({props}) => {
  const [added,setAdded] = useState(false);
- 
-  const cartData=useSelector((state)=>{
-    return  state.cartArr;
-  })
+    console.log(props);
 
-  const dispatch=useDispatch();
+    let obj = {
+
+    }
+  // const cartData=useSelector((state)=>{
+  //   return  state.cartArr;
+  // })
+  let token = localStorage.getItem('token');
+  // const dispatch=useDispatch();
 //  const [items,setItems] = useState([]);
   // let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
   
@@ -26,36 +30,44 @@ const Cards = ({props}) => {
        setAdded(false)
      }, 2000);
  
- fetch("http://localhost:3002/cartItems",
+ fetch("https://1dae-103-175-180-42.in.ngrok.io/api/cart",
  {
   method:"POST",
-  body:JSON.stringify(props),
+body:JSON.stringify([props]),
   headers:{
     "Content-Type":"application/json",
+    "Authorization":`Bearer ${token}`
   }
  }
- 
- 
- )
+ ).then((res)=>{
+  res.json()
+  console.log("gybgy",res)
+ }).then((res)=>{
+  console.log(res);
+ })
 
  
- const fetchdata=async(url)=>{
-  try{
-    const res= await fetch(url);
-  const data=await res.json();
-  dispatch(addToCart(data))
-  }catch(e){
-    console.log(e);
-  }
-  }
-  fetchdata("http://localhost:3002/cartItems")
+//  const fetchdata=async(url)=>{
+//   try{
+//     const res= await fetch(url);
+//   const data=await res.json();
+//   dispatch(addToCart(data))
+//   }catch(e){
+//     console.log(e);
+//   }
+//   }
+
+
+  // fetchdata("http://localhost:3002/cartItems")
+
     // cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
         // cartItems.push(props);
 
         // localStorage.setItem("cartItems",JSON.stringify(cartItems));
     //  setItems(cartItems)
     //  console.log(cartItems);
-   }
+
+    }
 
 
   return (
