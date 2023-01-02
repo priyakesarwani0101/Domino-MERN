@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 const jsontoken = (user) => {
   return jwt.sign({ user }, "confidential");
 };
-console.log(jsontoken);
+
 // Registration started
 export const Signup = async (req, res) => {
   try {
