@@ -27,6 +27,7 @@ export const Login = async (req, res) => {
         .send({ message: "Please enter valid email and password" });
 
     const match = user.checkPassword(req.body.password);
+    console.log(match)
 
     if (!match)
       return res
