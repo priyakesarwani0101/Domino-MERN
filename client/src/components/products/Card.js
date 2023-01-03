@@ -16,6 +16,8 @@ const Cards = ({props}) => {
        setAdded(false)
      }, 2000);
  
+
+     
  fetch("https://domino-backend.onrender.com/api/cart",
  {
   method:"POST",
