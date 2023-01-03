@@ -16,12 +16,10 @@ const NonvegPizza = () => {
       }
        
     }).then((res)=>res.json()).then((res)=>{
-      console.log(res.data);
+     // console.log(res.data);
       setState([...res.data.filter((el)=>el.category==='non_veg_pizza')]);
     })
   },[])
-
-  ///////
 
   const sortByPrice = (e) => {
     let Price = e.target.value;

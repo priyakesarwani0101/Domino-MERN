@@ -5,17 +5,6 @@ import Cards from "./Card";
 import './product.css';
 const Pasta = () => {
  
-  // const data = useSelector((state) => {
-  //   return state.data;
-    
-  // });
-  // console.log(data.data);
-  // let [state, setState] = useState([...data.data.pasta]);
-
-  // console.log(vegPizza);
-
-
-  ////new code
   let [state,setState] = useState([]);
   let token = localStorage.getItem("token");
 
@@ -27,12 +16,11 @@ const Pasta = () => {
       }
        
     }).then((res)=>res.json()).then((res)=>{
-      console.log(res.data);
+     // console.log(res.data);
       setState([...res.data.filter((el)=>el.category==='veg_pasta'||el.category==='non_veg_pasta')]);
     })
   },[])
 
-  ///////
 
   const sortByPrice = (e) => {
     let Price = e.target.value;

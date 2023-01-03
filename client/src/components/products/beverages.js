@@ -28,12 +28,12 @@ const Beverages = () => {
       }
        
     }).then((res)=>res.json()).then((res)=>{
-      console.log(res.data);
+     // console.log(res.data);
       setState([...res.data.filter((el)=>el.category==='sides_beverages')]);
     })
   },[])
 
-  ///////
+
 
 
   const sortByPrice = (e) => {

@@ -5,15 +5,6 @@ import Cards from "./Card";
 import './product.css';
 const PizzaMania = () => {
  
-  // const data = useSelector((state) => {
-  //   return state.data;
-    
-  // });
-  // console.log(data.data);
-  // let [state, setState] = useState([...data.data.pizza_mania]);
- 
-
-  ////new code
   let [state,setState] = useState([]);
 
   let token = localStorage.getItem("token");
@@ -26,12 +17,10 @@ const PizzaMania = () => {
       }
        
     }).then((res)=>res.json()).then((res)=>{
-      console.log(res.data);
+     // console.log(res.data);
       setState([...res.data.filter((el)=>el.category==='pizza_mania')]);
     })
   },[])
-
-  ///////
 
   const sortByPrice = (e) => {
     let Price = e.target.value;
