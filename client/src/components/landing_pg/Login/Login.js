@@ -79,7 +79,7 @@ import {
           mobileNo:mobileNumber
         }
 
-        fetch('https://e520-103-175-180-42.in.ngrok.io/api/user/mobile',{
+        fetch('"https://domino-backend.onrender.com/api/user/mobile',{
           method:"POST",
           body:JSON.stringify(user),
           headers:{

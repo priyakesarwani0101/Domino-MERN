@@ -30,7 +30,7 @@ const Cards = ({props}) => {
        setAdded(false)
      }, 2000);
  
- fetch("https://1dae-103-175-180-42.in.ngrok.io/api/cart",
+ fetch("https://domino-backend.onrender.com/api/cart",
  {
   method:"POST",
 body:JSON.stringify([props]),

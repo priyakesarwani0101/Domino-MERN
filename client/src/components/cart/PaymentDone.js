@@ -12,7 +12,7 @@ function PaymentDone() {
     setState(true)
       setTimeout(() => {
         navigate('/')
-      }, 3000);
+      }, 100);
    }
 
   return state ? <Loading /> : <div className='ord-succ-cont-pk'>

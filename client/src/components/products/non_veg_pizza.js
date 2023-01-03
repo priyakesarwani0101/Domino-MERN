@@ -5,23 +5,11 @@ import './product.css';
 import Footer from '../navbar/Footer/Footer'
 const NonvegPizza = () => {
  
-
-  // const data = useSelector((state) => {
-  //   return state.data;
-    
-  // });
-  // console.log(data.data);
-  // let [state, setState] = useState([...data.data.non_veg_pizza]);
- 
-  // console.log(vegPizza);
-
-
-  ////new code
   let [state,setState] = useState([]);
   let token = localStorage.getItem("token");
 
   useEffect(()=>{
-    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/products',{
+    fetch('https://domino-backend.onrender.com/api/products',{
       method:"GET",
       headers:{
         "Authorization":`Bearer ${token}`

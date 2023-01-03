@@ -1,13 +1,38 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import './payment.css'
 import {useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {Outlet} from 'react-router-dom';
 
 function Payment() {
-    const cartData=useSelector((state)=>{
-        return  state.cartArr;
+    // const cartData=useSelector((state)=>{
+    //     return  state.cartArr;
+    //   })
+    let token = localStorage.getItem('token');
+
+    const [cartData,setCartData] = useState([]);
+
+
+    const fetchData = ()=>{
+        fetch('https://domino-backend.onrender.com/api/cart',{
+        method:"GET",
+        headers:{
+         
+          "Authorization":`Bearer ${token}`
+        }
+      }).then((res)=>res.json()).then((res)=>{
+        console.log(res);
+        setCartData([...res.products]);
       })
+    }
+
+
+    useEffect(()=>{
+        fetchData();
+       
+    },[])
+
+
       const calculateAmount=cartData.reduce(((acc,e)=>{
         return (e.quantity*e.price)+acc;
       }),0)
@@ -69,17 +94,7 @@ function Payment() {
 
                     <div className='payment-method-right-pk' style={{marginBottom:"20px"}}>
                     <div><Outlet></Outlet></div>
-                        {/* <div className='cash-payment-option-show-pk'>
-                            <div className='cash-payment-option-img-pk'></div>
-                           
-                            <span className='payment-mode-desc-pk'>
-                                <p>If you wish to pay</p>
-                                <p>through cash</p>
-                            </span>
-                            <div className='confirm-order-btn-div-pk'>
-                                <Link to="/paymentCompleted"><button className='cash-confirm-btn-pk'><span>Confirm Order</span></button></Link>
-                            </div>
-                        </div> */}
+                       
 
                     </div>
                 </div>

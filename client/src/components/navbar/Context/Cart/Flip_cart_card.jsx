@@ -14,7 +14,7 @@ const Flip_cart_card=({props,index,func})=>{
    let token = localStorage.getItem("token");
 const increaseCount=  ()=>{
 
-    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+    fetch('https://domino-backend.onrender.com/api/cart',{
     method:"POST",
     body:JSON.stringify([props]),
     headers:{
@@ -23,7 +23,7 @@ const increaseCount=  ()=>{
     }
   }).then((res)=>res.json()).then((res)=>{
     console.log(res);
-    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+    func('https://domino-backend.onrender.com/api/cart');
   })
 
   
@@ -33,7 +33,7 @@ const increaseCount=  ()=>{
 const decreaseCount= ()=>{
 
    console.log(props);
-    fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+    fetch('https://domino-backend.onrender.com/api/cart',{
     method:"PATCH",
     body:JSON.stringify(props),
     headers:{
@@ -43,7 +43,7 @@ const decreaseCount= ()=>{
   }).then((res)=>res.json()).then((res)=>{
     console.log(res);
     setData({...res});
-    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+    func('https://domino-backend.onrender.com/api/cart');
   })
  
 }
@@ -54,7 +54,7 @@ const decreaseCount= ()=>{
         setbackrotate(true);
         
         
-        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+        fetch('https://domino-backend.onrender.com/api/cart',{
           method:"DELETE",
           body:JSON.stringify([props]),
           headers:{
@@ -64,7 +64,7 @@ const decreaseCount= ()=>{
         }).then((res)=>res.json()).then((res)=>{
           console.log(res);
           setData({...res});
-          func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+          func('https://domino-backend.onrender.com/api/cart');
         })
 
        

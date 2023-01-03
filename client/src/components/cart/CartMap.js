@@ -6,7 +6,7 @@ export const CartMap = ({props,func}) => {
 
     const increaseCount=  ()=>{
 
-        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+        fetch('https://domino-backend.onrender.com/api/cart',{
     method:"POST",
     body:JSON.stringify([props]),
     headers:{
@@ -15,7 +15,7 @@ export const CartMap = ({props,func}) => {
     }
   }).then((res)=>res.json()).then((res)=>{
     console.log(res);
-    func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+    func('https://domino-backend.onrender.com/api/cart');
   })
 
 
@@ -25,7 +25,7 @@ export const CartMap = ({props,func}) => {
        
         
         
-        fetch('https://1dae-103-175-180-42.in.ngrok.io/api/cart',{
+        fetch('https://domino-backend.onrender.com/api/cart',{
           method:"DELETE",
           body:JSON.stringify([props]),
           headers:{
@@ -35,7 +35,7 @@ export const CartMap = ({props,func}) => {
         }).then((res)=>res.json()).then((res)=>{
           console.log(res);
           setData({...res});
-          func('https://1dae-103-175-180-42.in.ngrok.io/api/cart');
+          func('https://domino-backend.onrender.com/api/cart');
         })
 
         
