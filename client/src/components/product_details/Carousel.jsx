@@ -8,7 +8,7 @@ import {useState,useRef} from 'react'
 function UncontrolledExample(props) {
   let price=props.price;
   let getPrice=price.getPrice;
-  console.log({...price});
+ // console.log({...price});
   let price1=price.price;
   // let{price,getPrice}=price;
   const [count,setCount]=React.useState(0);

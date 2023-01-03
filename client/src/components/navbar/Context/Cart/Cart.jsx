@@ -20,14 +20,11 @@ const Cart = () => {
 
   
  let token = localStorage.getItem("token");
-  // const dispatch=useDispatch();
-  // const [subtotal,setSubtotal]=useState(0);
+  
   
     const {showcart}=useContext(navContext);
     const {handleCart}=useContext(navContext);
 
-    // let cartData = JSON.parse(localStorage.getItem("cartItems")) || [];
-    // console.log(cartData)
     const fetchData = ()=>{
       fetch('https://domino-backend.onrender.com/api/cart',{
         method:"GET",
@@ -36,26 +33,17 @@ const Cart = () => {
           "Authorization":`Bearer ${token}`
         }
       }).then((res)=>res.json()).then((res)=>{
-        console.log(res);
+       // console.log(res);
         setCartData([...res.products]);
       })
     }
    
 useEffect(()=>{
   fetchData();
-},[])
+},[showcart])
 
 // fetchData();
 
-// const fetchdata=async(url)=>{
-// try{
-//   const res= await fetch(url);
-// const data=await res.json();
-// dispatch(addToCart(data))
-// }catch(e){
-//   console.log(e);
-// }
-// }
 
  
   return (

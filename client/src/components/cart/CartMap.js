@@ -14,17 +14,12 @@ export const CartMap = ({props,func}) => {
       "Authorization":`Bearer ${token}`
     }
   }).then((res)=>res.json()).then((res)=>{
-    console.log(res);
+   // console.log(res);
     func('https://domino-backend.onrender.com/api/cart');
   })
-
-
-       }
+ }
 
        const handleRemoveCart= async()=>{
-       
-        
-        
         fetch('https://domino-backend.onrender.com/api/cart',{
           method:"DELETE",
           body:JSON.stringify([props]),
@@ -33,7 +28,7 @@ export const CartMap = ({props,func}) => {
             "Authorization":`Bearer ${token}`
           }
         }).then((res)=>res.json()).then((res)=>{
-          console.log(res);
+         // console.log(res);
           setData({...res});
           func('https://domino-backend.onrender.com/api/cart');
         })

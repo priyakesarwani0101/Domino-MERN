@@ -12,8 +12,8 @@ export default function Cart() {
     const [coupen,setCoupen]=useState(false);
     const {setopenAdress}=useContext(addressContext);
     const [cartData,setCartData] = useState([]);
-    const dispatch=useDispatch();
-    const adressfunction = useContext(addressContext);
+    // const dispatch=useDispatch();
+    // const adressfunction = useContext(addressContext);
 
     const token = localStorage.getItem("token");
 
@@ -21,23 +21,11 @@ export default function Cart() {
         setCoupen(value);
      }
 
-    // const cartData=useSelector((state)=>{
-    //     return  state.cartArr;
-    //   })
 
       const calculateAmount=cartData.reduce(((acc,e)=>{
         return (e.quantity*e.price)+acc;
       }),0)
 
-    //   const fetchdata=async(url)=>{
-    //     try{
-    //       const res= await fetch(url);
-    //     const data=await res.json();
-    //     dispatch(addToCart(data))
-    //     }catch(e){
-    //       console.log(e);
-    //     }
-    //     }
     const fetchdata = ()=>{
         fetch('https://domino-backend.onrender.com/api/cart',{
         method:"GET",
@@ -46,7 +34,7 @@ export default function Cart() {
           "Authorization":`Bearer ${token}`
         }
       }).then((res)=>res.json()).then((res)=>{
-        console.log(res);
+       // console.log(res);
         setCartData([...res.products]);
       })
     }
@@ -55,7 +43,7 @@ export default function Cart() {
            fetchdata();
         },[])
 
-    //    fetchdata();
+    //   fetchdata();
 
   return (
     <div className='cartContainer-pk'>

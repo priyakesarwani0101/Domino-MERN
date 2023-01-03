@@ -23,7 +23,7 @@ function Detailsp({props}) {
 
   const dispatch=useDispatch();
 
-     console.log(props);
+    // console.log(props);
     const { isOpen, onOpen, onClose } = useDisclosure()
     const firstField = React.useRef()
     const sizeRef=React.useRef();

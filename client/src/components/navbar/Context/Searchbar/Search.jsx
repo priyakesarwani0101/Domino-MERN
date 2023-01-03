@@ -25,21 +25,21 @@ import './search.css'
     }
     useEffect(()=>{
         
-        fetchdata(`http://localhost:3002/domino_data?q=${query}&_limit=4`)
+        fetchdata(`https://domino-backend.onrender.com/api/products?q=${query}&_limit=4`)
     },[query,handleSearch])
     
     const fetchdata= async(url)=>{
         try{
             const res=await fetch(url);
             const data=await res.json();
-            console.log(data);
-            setData(data.veg_pizza);
+           // console.log(data);
+            setData(data.data);
             // console.log(data.length);
             // setTotalPages(Math.ceil(data.length/4));
            
         }
         catch(e){
-      console.log(e);
+      //console.log(e);
         }
     }
 

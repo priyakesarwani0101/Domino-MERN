@@ -5,7 +5,7 @@ import { json } from "react-router-dom";
 
 import './style/cartCard.css'
 const Flip_cart_card=({props,index,func})=>{
-  console.log(props);
+ // console.log(props);
   const dispatch=useDispatch();
     const [rotate,setrotate]=useState(false);
     const [backrotate,setbackrotate]=useState(false);
@@ -22,7 +22,7 @@ const increaseCount=  ()=>{
       "Authorization":`Bearer ${token}`
     }
   }).then((res)=>res.json()).then((res)=>{
-    console.log(res);
+   // console.log(res);
     func('https://domino-backend.onrender.com/api/cart');
   })
 
@@ -41,7 +41,7 @@ const decreaseCount= ()=>{
       "Authorization":`Bearer ${token}`
     }
   }).then((res)=>res.json()).then((res)=>{
-    console.log(res);
+   // console.log(res);
     setData({...res});
     func('https://domino-backend.onrender.com/api/cart');
   })
@@ -62,7 +62,7 @@ const decreaseCount= ()=>{
             "Authorization":`Bearer ${token}`
           }
         }).then((res)=>res.json()).then((res)=>{
-          console.log(res);
+         // console.log(res);
           setData({...res});
           func('https://domino-backend.onrender.com/api/cart');
         })

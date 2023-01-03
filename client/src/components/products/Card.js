@@ -1,31 +1,17 @@
 import React,{useState} from "react";
 import './product.css';
-import { useDispatch ,useSelector} from "react-redux";
-import { addToCart } from "../../Redux/action";
+// import { useDispatch ,useSelector} from "react-redux";
+// import { addToCart } from "../../Redux/action";
 import Detailsp from "../product_details/Detailsp";
 import { Box } from "@chakra-ui/react";
 
 const Cards = ({props}) => {
  const [added,setAdded] = useState(false);
-    console.log(props);
-
-    let obj = {
-
-    }
-  // const cartData=useSelector((state)=>{
-  //   return  state.cartArr;
-  // })
-  let token = localStorage.getItem('token');
-  // const dispatch=useDispatch();
-//  const [items,setItems] = useState([]);
-  // let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+   // console.log(props);
   
-  //  localStorage.setItem("cartItems",JSON.stringify(cartItems));
-
-  //  console.log(props.id)
+  let token = localStorage.getItem('token');
    const addedToCart = ()=>{
      setAdded(true);
-    // alert("Added to cart");
      setTimeout(() => {
        setAdded(false)
      }, 2000);
@@ -41,33 +27,11 @@ body:JSON.stringify([props]),
  }
  ).then((res)=>{
   res.json()
-  console.log("gybgy",res)
+ // console.log("gybgy",res)
  }).then((res)=>{
   console.log(res);
  })
-
- 
-//  const fetchdata=async(url)=>{
-//   try{
-//     const res= await fetch(url);
-//   const data=await res.json();
-//   dispatch(addToCart(data))
-//   }catch(e){
-//     console.log(e);
-//   }
-//   }
-
-
-  // fetchdata("http://localhost:3002/cartItems")
-
-    // cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
-        // cartItems.push(props);
-
-        // localStorage.setItem("cartItems",JSON.stringify(cartItems));
-    //  setItems(cartItems)
-    //  console.log(cartItems);
-
-    }
+ }
 
 
   return (
@@ -81,8 +45,7 @@ body:JSON.stringify([props]),
       <h3 style={{textAlign:"center"}}>Rs: {props.price}</h3>
        <h3 style={{textAlign:"center"}}>Ratings: {props.ratings } <i class="fa-solid fa-star"></i></h3>
       <div id="cartBtn">
-        {/* <Button /> */}
-        {/* <button>Details</button> */}
+       
         <Detailsp props={props}/>
         <button onClick={()=>addedToCart(props)} >Add to cart</button>
       </div>
@@ -96,5 +59,3 @@ body:JSON.stringify([props]),
 };
 
 export default Cards;
-
-// http://localhost:3002/cartItems

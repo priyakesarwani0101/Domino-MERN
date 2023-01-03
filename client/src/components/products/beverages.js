@@ -16,7 +16,6 @@ const Beverages = () => {
   // let [state, setState] = useState([...data.data.sides_beverages]);
 
 
-  ////new code
   let [state,setState] = useState([]);
   let token = localStorage.getItem("token");
 
