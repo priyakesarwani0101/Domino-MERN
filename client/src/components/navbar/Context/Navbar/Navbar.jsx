@@ -41,13 +41,10 @@ const handle_logout_status_navbar=()=>{
   localStorage.setItem("userLoginNumber","");
   setStatusCheck(false);
 
+  localStorage.removeItem("token");
+
 }
 
-// if(userNumber !=""){
-//   console.log(userNumber) ;
- 
-  
-// }
 
 
 

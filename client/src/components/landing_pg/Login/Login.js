@@ -79,7 +79,7 @@ import {
           mobileNo:mobileNumber
         }
 
-        fetch('"https://domino-backend.onrender.com/api/user/mobile',{
+        fetch('https://domino-backend.onrender.com/api/user/mobile',{
           method:"POST",
           body:JSON.stringify(user),
           headers:{
